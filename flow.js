@@ -1,4 +1,25 @@
 
+
+
+
+/*
+   <script type="text/javascript">
+      function display(form) {
+         if (form.username.value == obj.username) {
+            if (form.password.value == obj.password) {
+               location = "index.html"
+            } else {
+               alert("Invalid Password")
+            }
+         } else {
+            alert("Invalid Username")
+         }
+      }
+   </script>
+*/
+
+
+
 //kondisional untuk function============================
 const slidePage = document.querySelector('.slidePage')
 const firtNextBtn = document.querySelector('.nextBtn')

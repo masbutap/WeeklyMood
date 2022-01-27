@@ -6,10 +6,11 @@
    <title>Sign up / Login Form</title>
    <link rel="stylesheet" href="style/style3.css">
 
+   <script src="flow.js"></script>
+
 </head>
 
 <body>
-   <!-- partial:index.partial.html -->
    <!DOCTYPE html>
    <html>
 
@@ -38,7 +39,8 @@
                <input id="loginUserName" type="text" name="txt" placeholder="Username" required="">
                <input id="loginPassword" type="password" name="pswd" placeholder="Password" required="">
                <a id="link-login" href="index.html">
-                  <button id="login-button" type="button"> Login</button>
+                  <button id="login-button" type="button" value="Login" onClick="loginFunction(this.form)">
+                     Login</button>
                </a>
             </form>
          </div>
