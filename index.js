@@ -34,8 +34,8 @@ function login (username, password) { // untuk login di HTML, tombol login
 // [0, 0, 0, 0, 0, 0, 0]
 
 function inputMood(selectorDay, radioMood) { // radio 1-5, HTML hari id="senin"  MAIN FUNCTION
-   let index = document.getElementById(selectorDay).value
-   let inputMood = document.getElementById(radioMood).value
+   let index = document.getElementById(selectorDay).value;
+   let inputMood = document.getElementById(radioMood).value;
 
    //testing
    // let inputMood = radioMood
@@ -49,6 +49,30 @@ function inputMood(selectorDay, radioMood) { // radio 1-5, HTML hari id="senin" 
    }
 } //working
 // [ 0, 0, 0, 4, 0, 0, 0]
+
+
+function afterInput(selectorDay, input) { // setelah submit input mood per hari
+   let index = document.getElementById(selectorDay).value;
+   if (input[index] >= 3) { // input mood 3, 4, 5 = doing well
+      return `You're doing well`; // nanti dilink ke HTML
+   }
+
+   if (input[index] === 1 && input[index - 1] === 1) { // kalau 2 hari berturut2 moodnya 1
+      return `We're worried about you. Try contacting our psychologist: +62 6262 6262`; // nanti juga link ke HTML
+   } else if (input[index] < 3) { // kalau input mood 1, 2
+      return `Page kuesioner` // link ke page kuesioner
+   }
+}
+
+function question(answer) { // hanya jalan kalau return afterInput() ===  `Page keusioner`
+   // Page kuesioner: multiple choice. Yes = true, no = false.
+   if (answer) {
+      return // cara mengatasi amarah
+   } else {
+      return // <iframe width="560" height="315" src="https://www.youtube.com/embed/zd44dgITV_Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      // tembak link html
+   }
+}
 
 //testing
 // console.log(inputMood(3, 4));
