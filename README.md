@@ -8,3 +8,5 @@
 3. Evaluasi level mood
 
 #Fitur Tambahan: Kuisioner untuk rekomendasi konten memperbaiki mood
+
+# https://jamboard.google.com/d/1vLDWqwidYaOeHM4V9_zbnj8oWUW_8jkGf7nDgqkEcEY/viewer?f=0
