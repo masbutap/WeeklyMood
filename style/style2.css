@@ -9,7 +9,7 @@ body {
    align-items: center;
    justify-content: center;
    min-height: 100vh;
-   background: url("/hackton8/WeeklyMood/assets/bg-mood.jpg");
+   background: url("/assets/bg-mood.jpg");
 }
 
 .container {
