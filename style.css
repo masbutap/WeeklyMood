@@ -1,76 +1,105 @@
+* {
+	text-decoration: none;
+	margin: 0px;
+	padding: 0px;
+}
 
 body {
-   height: 100vh;
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.wrapper {
+	width: 1100px;
+	margin: auto;
+	position: relative;
+}
+img {
+	margin-top: 10px;
+	width: 50%;
+	height: 50%;
+
+}
+
+.logo a {
+	font-size: 50px;
+	font-weight: 800;
+	float: left;
+	font-family: courier;
+	color: red;
+}
+.menu {
+	float: right;
+}
+
+
+nav {
+	width: 100%;
+	display: flex;
+	margin: auto;
+	line-height: 80px;
+	position: sticky;
+	top: 0;
+	background: white;
+	z-index: 1;
+	border-bottom: 1px solid lightslategrey;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+nav ul li {
+	float: left;
+}
+
+nav ul li a {
+	color: black;
+	font-weight: bold;
+	text-align: center;
+	padding: 0px 16px 0px 16px;
+	text-decoration: none;
+}
+
+nav ul li a:hover {
+	text-decoration: underline;
+}
+
+section {
+	margin: auto;
+	display: flex;
+	margin-bottom: 50px;
+}
+
+.kolom {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.kolom .deskripsi {
+	font-size: 20px;
+	font-weight: bold;
+	font-family: 'comic sans ms';
+	color: red;
+}
+
+h2 {
+	font-family: 'comic sans ms';
+	font-weight: 800;
+	font-size: 45px;
+	margin-bottom: 20px;
+	color: blue;
+	width: 100%;
+	line-height: 50px;
+}
+
+.button {
    display: flex;
    justify-content: center;
    align-items: center;
-   margin: 0;
-   background-color: #BAFFB4;
- }
- 
- .container {
-   display: flex;
-   border-radius: 10px;
-   box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.1);
-   background-color: white;
- }
- 
- .icon img {
-   width: 100%;
-   border-radius: 10px 0 0 10px;
-   height: 100%;
- }
-
- .about {
-    text-align: center;
-    flex-direction: column;
-    justify-content: space-between;
-    display: flex;
-
- }
- 
- .form {
-   padding: 5px 25px;
-   /* font-family: "Mulish", sans-serif; */
-   font-family: "Roboto", sans-serif;
-   width: 500px;
- }
- 
- .form h1 {
-   font-family: "Fredoka One", cursive;
-   text-align: center;
- }
- 
- .input-form {
-   display: flex;
-   flex-direction: column;
- }
- 
- label {
-   margin-bottom: 5px;
- }
- 
- input {
-   height: 15px;
-   margin-bottom: 10px;
-   padding: 16px 20px;
-   border-style: solid;
-   border-width: 1px;
-   border-color: rgba(44, 45, 54, 0.17);
-   border-radius: 5px;
-   -webkit-transition: border-color 0.2s ease;
-   transition: border-color 0.2s ease;
-   font-size: 16px;
-   line-height: 24px;
- }
- 
-
- .button {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   margin-top: 30px;
-   margin-bottom: 30px;
  }
  
  .button button {
@@ -82,11 +111,11 @@ body {
    font-family: "Mulish", sans-serif;
    font-weight: bold;
    color: white;
-   margin-top: 30px;
    background-color: #F6D860;
  } 
 
  button {
+	 margin: 50px;
 	cursor: pointer;
 	font-family: 'Staatliches', cursive;
 	box-shadow: 0px 0px 0px rgba(0,0,0,0.4);
