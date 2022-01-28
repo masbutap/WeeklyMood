@@ -62,41 +62,65 @@ firtNextBtn.addEventListener("click", function () {
    //---------------------------
 })
 nextBtnSec.addEventListener("click", function () {
-   // let 
-
-   slidePage.style.marginLeft = "-50%"
-   bullet[current - 1].classList.add("active")
-   progress[current - 1].classList.add("active")
-   progressCheck[current - 1].classList.add("active")
-   current += 1
+   let tueVal = document.getElementById('tue').value
+   if (tueVal == 1 || monVal == 2) {
+      window.open("konsul.html");
+   } else {
+      slidePage.style.marginLeft = "-50%"
+      bullet[current - 1].classList.add("active")
+      progress[current - 1].classList.add("active")
+      progressCheck[current - 1].classList.add("active")
+      current += 1
+   }
 })
 nextBtnTrd.addEventListener("click", function () {
-   slidePage.style.marginLeft = "-75%"
-   bullet[current - 1].classList.add("active")
-   progress[current - 1].classList.add("active")
-   progressCheck[current - 1].classList.add("active")
-   current += 1
+   let wedVal = document.getElementById('wed').value
+
+   if (wedVal == 1 || monVal == 2) {
+      window.open("konsul.html");
+   } else {
+      slidePage.style.marginLeft = "-75%"
+      bullet[current - 1].classList.add("active")
+      progress[current - 1].classList.add("active")
+      progressCheck[current - 1].classList.add("active")
+      current += 1
+   }
 })
 nextBtnFour.addEventListener("click", function () {
-   slidePage.style.marginLeft = "-100%"
-   bullet[current - 1].classList.add("active")
-   progress[current - 1].classList.add("active")
-   progressCheck[current - 1].classList.add("active")
-   current += 1
+   let thuVal = document.getElementById('thu').value
+   if (thuVal == 1 || monVal == 2) {
+      window.open("konsul.html");
+   } else {
+      slidePage.style.marginLeft = "-100%"
+      bullet[current - 1].classList.add("active")
+      progress[current - 1].classList.add("active")
+      progressCheck[current - 1].classList.add("active")
+      current += 1
+   }
 })
 nextBtnFiv.addEventListener("click", function () {
-   slidePage.style.marginLeft = "-125%"
-   bullet[current - 1].classList.add("active")
-   progress[current - 1].classList.add("active")
-   progressCheck[current - 1].classList.add("active")
-   current += 1
+   let friVal = document.getElementById('fri').value
+   if (friVal == 1 || monVal == 2) {
+      window.open("konsul.html");
+   } else {
+      slidePage.style.marginLeft = "-125%"
+      bullet[current - 1].classList.add("active")
+      progress[current - 1].classList.add("active")
+      progressCheck[current - 1].classList.add("active")
+      current += 1
+   }
 })
 nextBtnSix.addEventListener("click", function () {
-   slidePage.style.marginLeft = "-150%"
-   bullet[current - 1].classList.add("active")
-   progress[current - 1].classList.add("active")
-   progressCheck[current - 1].classList.add("active")
-   current += 1
+   let sunVal = document.getElementById('sun').value
+   if (friVal == 1 || monVal == 2) {
+      window.open("konsul.html");
+   } else {
+      slidePage.style.marginLeft = "-150%"
+      bullet[current - 1].classList.add("active")
+      progress[current - 1].classList.add("active")
+      progressCheck[current - 1].classList.add("active")
+      current += 1
+   }
 })
 
 
