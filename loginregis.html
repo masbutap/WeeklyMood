@@ -6,7 +6,7 @@
    <title>Sign up / Login Form</title>
    <link rel="stylesheet" href="style/style3.css">
 
-   <script src="flow.js"></script>
+   <!-- <script src="flow.js"></script> -->
 
 </head>
 
@@ -16,7 +16,7 @@
 
    <head>
       <title>Slide Navbar</title>
-      <link rel="stylesheet" type="text/css" href="slide navbar style.css">
+      <!-- <link rel="stylesheet" type="text/css" href="slide navbar style.css"> -->
       <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
    </head>
 
@@ -25,23 +25,25 @@
          <input type="checkbox" id="chk" aria-hidden="true">
 
          <div class="signup">
-            <form>
+            <form action="index.html">
                <label for="chk" aria-hidden="true">Sign up</label>
-               <input id="username" type="text" name="txt" placeholder="Username" required="">
-               <input id="password" type="password" name="pswd" placeholder="Password" required="">
-               <button>Sign up</button>
+               <input id="regisusername" type="text" name="txt" placeholder="Username" required="">
+               <input id="regispassword" type="password" name="pswd" placeholder="Password" required="">
+               <input class="button" id="regisBtn" type="submit" value="Sign Up">
+               <!-- <button id="regisBtn">Sign up</button> -->
             </form>
          </div>
 
          <div class="login">
-            <form>
+            <form action="index.html">
                <label for="chk" aria-hidden="true">Login</label>
                <input id="loginUserName" type="text" name="txt" placeholder="Username" required="">
                <input id="loginPassword" type="password" name="pswd" placeholder="Password" required="">
-               <a id="link-login" href="index.html">
-                  <button id="login-button" type="button" value="Login" onClick="loginFunction(this.form)">
+               <input class="button" id="login-button" type="submit" value="Login">
+               <!-- <a id="link-login">
+                  <button id="login-button" type="button" value="Login" >
                      Login</button>
-               </a>
+               </a> -->
             </form>
          </div>
       </div>
@@ -49,13 +51,7 @@
 
    </html>
    <!-- partial -->
-   <script>
-      function login() {
-
-      }
-
-   </script>
-
+   <script src="loginregis.js"></script>
 </body>
 
 </html>

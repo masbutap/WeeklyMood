@@ -1,9 +1,5 @@
-var nama = '';
-
-// testing
-// let pw = '123';
-
-let users = []
+let nama = localStorage.sessionNama || '';
+let users = JSON.parse(localStorage.getItem("arrusers") || "[]");
 
 //testing
 // let users = [{ username: 'naruto', password: '123', mood: [0, 0, 0, 0, 0, 0, 0]}, {username: 'sasuke', password: '456', mood: [0, 0, 0, 0, 0, 0, 0]} ]
