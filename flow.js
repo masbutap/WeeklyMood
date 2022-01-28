@@ -1,3 +1,26 @@
+
+
+
+
+/*
+   <script type="text/javascript">
+      function display(form) {
+         if (form.username.value == obj.username) {
+            if (form.password.value == obj.password) {
+               location = "index.html"
+            } else {
+               alert("Invalid Password")
+            }
+         } else {
+            alert("Invalid Username")
+         }
+      }
+   </script>
+*/
+
+
+
+//kondisional untuk function============================
 const slidePage = document.querySelector('.slidePage')
 const firtNextBtn = document.querySelector('.nextBtn')
 const prevBtnSec = document.querySelector('.prev-1')
@@ -18,12 +41,19 @@ const bullet = document.querySelectorAll('.step .bullet')
 let max = 7
 let current = 1
 
+// ini untuk slider nxt -------------
 firtNextBtn.addEventListener("click", function () {
-   slidePage.style.marginLeft = "-25%"
+   /**
+    if (dibawah 3) ----> page kuisoner
+    */
+
+   //----------------------------
+   slidePage.style.marginLeft = "-25%" // slider
    bullet[current - 1].classList.add("active")
    progress[current - 1].classList.add("active")
    progressCheck[current - 1].classList.add("active")
    current += 1
+   //---------------------------
 })
 nextBtnSec.addEventListener("click", function () {
    slidePage.style.marginLeft = "-50%"
@@ -60,17 +90,20 @@ nextBtnSix.addEventListener("click", function () {
    progressCheck[current - 1].classList.add("active")
    current += 1
 })
+
+
 // submit buttonnya ---------------------
 submitBtn.addEventListener("click", function () {
    bullet[current - 1].classList.add("active")
    progress[current - 1].classList.add("active")
    progressCheck[current - 1].classList.add("active")
    current += 1
+
    setTimeout(function () {
       alert('okeokeoek')
    }, 800)
 })
-//----------------------------------------
+//-----------------------------------------------------------------------
 // 
 prevBtnSev.addEventListener("click", function () {
    slidePage.style.marginLeft = "-125%"
