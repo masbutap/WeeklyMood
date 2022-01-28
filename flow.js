@@ -40,55 +40,87 @@ const progressCheck = document.querySelectorAll('.step .check')
 const bullet = document.querySelectorAll('.step .bullet')
 let max = 7
 let current = 1
-
+//================(value get by id)==========================
+// let monVal = document.querySelector('.#mon')
+//==============================================================
 // ini untuk slider nxt -------------
 firtNextBtn.addEventListener("click", function () {
+   let monVal = document.getElementById('mon').value
    /**
     if (dibawah 3) ----> page kuisoner
     */
-
-   //----------------------------
-   slidePage.style.marginLeft = "-25%" // slider
-   bullet[current - 1].classList.add("active")
-   progress[current - 1].classList.add("active")
-   progressCheck[current - 1].classList.add("active")
-   current += 1
+   if (monVal == 1 || monVal == 2) {
+      window.open("konsul.html");
+   } else {
+      //----------------------------
+      slidePage.style.marginLeft = "-25%" // slider
+      bullet[current - 1].classList.add("active")
+      progress[current - 1].classList.add("active")
+      progressCheck[current - 1].classList.add("active")
+      current += 1
+   }
    //---------------------------
 })
 nextBtnSec.addEventListener("click", function () {
-   slidePage.style.marginLeft = "-50%"
-   bullet[current - 1].classList.add("active")
-   progress[current - 1].classList.add("active")
-   progressCheck[current - 1].classList.add("active")
-   current += 1
+   let tueVal = document.getElementById('tue').value
+   if (tueVal == 1 || monVal == 2) {
+      window.open("konsul.html");
+   } else {
+      slidePage.style.marginLeft = "-50%"
+      bullet[current - 1].classList.add("active")
+      progress[current - 1].classList.add("active")
+      progressCheck[current - 1].classList.add("active")
+      current += 1
+   }
 })
 nextBtnTrd.addEventListener("click", function () {
-   slidePage.style.marginLeft = "-75%"
-   bullet[current - 1].classList.add("active")
-   progress[current - 1].classList.add("active")
-   progressCheck[current - 1].classList.add("active")
-   current += 1
+   let wedVal = document.getElementById('wed').value
+
+   if (wedVal == 1 || monVal == 2) {
+      window.open("konsul.html");
+   } else {
+      slidePage.style.marginLeft = "-75%"
+      bullet[current - 1].classList.add("active")
+      progress[current - 1].classList.add("active")
+      progressCheck[current - 1].classList.add("active")
+      current += 1
+   }
 })
 nextBtnFour.addEventListener("click", function () {
-   slidePage.style.marginLeft = "-100%"
-   bullet[current - 1].classList.add("active")
-   progress[current - 1].classList.add("active")
-   progressCheck[current - 1].classList.add("active")
-   current += 1
+   let thuVal = document.getElementById('thu').value
+   if (thuVal == 1 || monVal == 2) {
+      window.open("konsul.html");
+   } else {
+      slidePage.style.marginLeft = "-100%"
+      bullet[current - 1].classList.add("active")
+      progress[current - 1].classList.add("active")
+      progressCheck[current - 1].classList.add("active")
+      current += 1
+   }
 })
 nextBtnFiv.addEventListener("click", function () {
-   slidePage.style.marginLeft = "-125%"
-   bullet[current - 1].classList.add("active")
-   progress[current - 1].classList.add("active")
-   progressCheck[current - 1].classList.add("active")
-   current += 1
+   let friVal = document.getElementById('fri').value
+   if (friVal == 1 || monVal == 2) {
+      window.open("konsul.html");
+   } else {
+      slidePage.style.marginLeft = "-125%"
+      bullet[current - 1].classList.add("active")
+      progress[current - 1].classList.add("active")
+      progressCheck[current - 1].classList.add("active")
+      current += 1
+   }
 })
 nextBtnSix.addEventListener("click", function () {
-   slidePage.style.marginLeft = "-150%"
-   bullet[current - 1].classList.add("active")
-   progress[current - 1].classList.add("active")
-   progressCheck[current - 1].classList.add("active")
-   current += 1
+   let sunVal = document.getElementById('sun').value
+   if (friVal == 1 || monVal == 2) {
+      window.open("konsul.html");
+   } else {
+      slidePage.style.marginLeft = "-150%"
+      bullet[current - 1].classList.add("active")
+      progress[current - 1].classList.add("active")
+      progressCheck[current - 1].classList.add("active")
+      current += 1
+   }
 })
 
 
@@ -100,7 +132,7 @@ submitBtn.addEventListener("click", function () {
    current += 1
 
    setTimeout(function () {
-      alert('okeokeoek')
+      alert('Good Job, Keep your mood always on fire!')
    }, 800)
 })
 //-----------------------------------------------------------------------
