@@ -40,22 +40,30 @@ const progressCheck = document.querySelectorAll('.step .check')
 const bullet = document.querySelectorAll('.step .bullet')
 let max = 7
 let current = 1
-
+//================(value get by id)==========================
+// let monVal = document.querySelector('.#mon')
+//==============================================================
 // ini untuk slider nxt -------------
 firtNextBtn.addEventListener("click", function () {
+   let monVal = document.getElementById('mon').value
    /**
     if (dibawah 3) ----> page kuisoner
     */
-
-   //----------------------------
-   slidePage.style.marginLeft = "-25%" // slider
-   bullet[current - 1].classList.add("active")
-   progress[current - 1].classList.add("active")
-   progressCheck[current - 1].classList.add("active")
-   current += 1
+   if (monVal == 1 || monVal == 2) {
+      window.open("konsul.html");
+   } else {
+      //----------------------------
+      slidePage.style.marginLeft = "-25%" // slider
+      bullet[current - 1].classList.add("active")
+      progress[current - 1].classList.add("active")
+      progressCheck[current - 1].classList.add("active")
+      current += 1
+   }
    //---------------------------
 })
 nextBtnSec.addEventListener("click", function () {
+   // let 
+
    slidePage.style.marginLeft = "-50%"
    bullet[current - 1].classList.add("active")
    progress[current - 1].classList.add("active")
@@ -100,7 +108,7 @@ submitBtn.addEventListener("click", function () {
    current += 1
 
    setTimeout(function () {
-      alert('okeokeoek')
+      alert('Good Job, Keep your mood always on fire!')
    }, 800)
 })
 //-----------------------------------------------------------------------
